@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  min-width: 500px;
+  font-family: Arial;
+  font-size: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+ul#taskList {
+	padding:  0;
+}
+
+li.task {
+	border-top: solid 1px beige;
+	padding: 12px 8px 12px 10px;
+	transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+
+}
+
+li.task:hover {
+	background-color: #c0e5d0;
+}
+
+input.taskCheckbox {
+	position: absolute;
+    margin-left: 83%;
+    cursor: pointer;
+}
+
+
+table,th{
+        border-style: hidden;
+        width: 100%;
+        text-align: left;
+}
+
+#addBtn {
+    width: 50px;
+    border-radius: 5px;
+    background-color: blue;
+    color:white;
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#addBtn:hover {
+  background-color: black;
+}
+
+#exportImport{
+    margin: 5px;
+}
+
+button{
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#container {
+ width: 600px;
+ position: relative;
+}
+
+#header {
+	font-size: 20px;
+    margin: 5px;
+	font-family: Arial, sans-serif;
+}
+
+#inputContainer {
+	margin: 5px;
+}
+
+#inputContainer #taskInput {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  width:60%;
+}
+
+
+.deleteTaskBtn {
+	float:right;
+    content: "&#xe020;";
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 5px; 
+    color: blue;
+	line-height: 0;
+	cursor: pointer;
+	transition: all 0.1s ease-in-out;
+		-webkit-transition: all 0.1s ease-in-out;
+			-moz-transition: all 0.1s ease-in-out;
+}
+
+.deleteTaskBtn:hover {
+	color: black;
+}

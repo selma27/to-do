@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--responsive-->
+	<title>To do list</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<p>Minimalist to-do list</p>
+		</div>
+        <br>
+		<div id="inputContainer">
+			<input id="taskInput" type="text" placeholder="Type in to-do text..." >
+            <span onclick="newElement()" id="addBtn">Add new</span>
+            <br><br>
+            
+		</div>
+    
+        <div id="exportImport">
+        <button type="button" onclick="funImport()">Import to-do tasks</button>
+            <button type="button" onclick="funExport()">Export to-do tasks</button>
+        <br><br>
+        </div>
+        
+    <table>
+        <tr> 
+            <th>to-do text</th>
+            <th>Completed</th>
+            <th>Delete</th>
+        </tr>
+        </table>
+
+			<ul id="taskList">
+			</ul>
+    </div>
+
+	
+<script src="todo.js"></script>
+</body>
+</html>
